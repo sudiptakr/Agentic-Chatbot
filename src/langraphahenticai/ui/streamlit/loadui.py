@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-from src.langgraphagenticai.ui.uiconfigfile import Config
+from src.langraphahenticai.ui.uiconfigreader import Config
 
 class LoadStreamlitUI:
     def __init__(self):
@@ -9,8 +9,8 @@ class LoadStreamlitUI:
         self.user_controls={}
 
     def load_streamlit_ui(self):
-        st.set_page_config(page_title= "🤖 " + self.config.get_page_title(), layout="wide")
-        st.header("🤖 " + self.config.get_page_title())
+        st.set_page_config(page_title= "Load " + self.config.get_page_title(), layout="wide")
+        st.header("Load " + self.config.get_page_title())
 
 
         with st.sidebar:
